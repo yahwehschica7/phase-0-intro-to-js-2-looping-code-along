@@ -1,24 +1,18 @@
-const thankYouNotes = ["Anna", "Bob", "Cathy"];
 
-function writeCards(thankYouNotes) {
-    for (let i =0; i < thankYouNotes.length; i++) {
-    console.log(`Thank you ${thankYouNotes[i]} for the awesome gift!`);
+function writeCards(names, event) {
+    let messages = [];
+    for(let i = 0; i < names.length; i++) {
+        messages.push(`Thank you, ${names[i]}, for the wonderful surprise gift!`);
+     }
+      return messages 
 }
-return thankYouNotes;
-}
 
-writeCards(thankYouNotes);
-
-//=> while loop
-
-
-
-function countDown() {
-    let countDown = 18; 
-    while (countDown > -1) {
-        console.log (countDown--);
-        }
-        return countDown
+function countDown(num) {
+    while(num > -1) {
+        console.log(num);
+        num--;
     }
-countDown();
+}
+    
+   
 
